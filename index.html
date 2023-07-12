@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="./img/site-logo.ico">
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width">
+	 <link rel="stylesheet" type="text/css" href="./styles/style.css">
+	 <title>html-css-js-final-project</title>
+</head>
+	<body class="body">
+			<header class="header">
+				<div class="container">
+					<nav class ="nav">
+						<div class="logo-wrapper">
+							<a href="#" class="site-logo">
+								<img src="./img/site-logo.svg" alt="logo" class="site-logo">
+							</a>
+							<h1 class="logo-text desktop">CryptoSale</h1>
+						</div>
+						<div class="nav-links-wrapper">
+							<a href="#" class="nav-link">Home</a>
+							<a href="#" class="nav-link">Tariffs</a>
+							<a href="#" class="nav-link">Reviews</a>
+							<a href="#" class="nav-link">Rules</a>
+							<a href="#" class="nav-link">FAQ</a>
+							<a href="#" class="nav-link">For partners</a>
+							<a href="#" class="nav-link">Contacts</a>
+						</div>
+						<div class="user-options">
+							<button class="sign-up-btn registration-option">Sign Up</button>
+							<button class="log-in-btn registration-option">Log in</button>
+						</div>
+						<div class="burger-btn burger-btn-wrapper">
+							<div class="burger-btn"></div>
+							<div class="burger-btn"></div>
+							<div class="burger-btn"></div>
+						</div>
+						<div class="dropdown-background"> 
+								<div class="dropdown-content">
+									<span class="close-dropdown">
+										<img src="./img/cross-dropdown.svg" class="close">
+									</span>
+									<div class="menu-container">
+										<div class="dropdown-nav">
+											<h1 class="dropdown-header">
+												<img src="./img/log-in-icon.svg" class="">
+												Log in
+											</h1>
+											<a href="#" class="dropdown-nav-link nav-link">Home</a>
+											<a href="#" class="dropdown-nav-link nav-link">Tariffs</a>
+											<a href="#" class="dropdown-nav-link nav-link">Reviews</a>
+											<a href="#" class="dropdown-nav-link nav-link">Rules</a>
+											<a href="#" class="dropdown-nav-link nav-link">FAQ</a>
+											<a href="#" class="dropdown-nav-link nav-link">For partners</a>
+											<a href="#" class="dropdown-nav-link nav-link">Contacts</a>
+										</div>
+										<input type="text" placeholder="Search.." class="dropdown-search" name="search" disabled>
+									</div>
+								</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<main class="main">
+				<div class="modal-background">
+					<div class="modal">
+						<span class="close-dropdown">
+							<img src="./img/cross-dropdown.svg" class="close">
+						</span>
+						<div class="modal-window">
+							<div class="modal-text modal-text-top">
+							</div>
+							<div class="modal-text modal-text-bottom">
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="promo-box">
+					<div class="container promo">
+						<div class="content-box">
+							<h1 class="promo-header">
+								Currency Exchange
+								<br>
+								fast & safe
+							</h1>
+							<h2 class="promo-subheader">No extra fee. Account replenishment no longer than 15 minutes</h2>
+							<form class="main-form">
+								<div class="inputs-container">
+									<div class="amount-inputs-wrapper">
+										<label class="input-wrapper" for="amount-input">
+											You give
+											<input type="text" placeholder="Amount" class="amount-input give give-input" id="amount-input" disabled value="0">
+										</label>
+										<label class="input-wrapper input-wrapper-mr-14" for="give-currency-input">
+											<select class="give-currency select give-currency-input" id="give-currency-input" disabled>
+											</select>
+										</label>
+									</div>
+									<button class="swap-btn">
+										<img src="./img/icons.svg" class="swap-btn-img desktop inverse">
+										<img src="./img/icon-mobile.svg" class="swap-btn-img mobile inverse">
+									</button>
+									<div class="currency-inputs-wrapper">
+										<label class="input-wrapper input-wrapper-mr-6" for="receive-input">
+											You receive
+											<input type="text" placeholder="999 999 999" class="amount-input receive receive-input" id="receive-input" disabled value="0">
+										</label>
+										<label class="input-wrapper" for="receive-currency-input">
+											<select class="give-currency select receive-currency-input" id="receive-currency-input" disabled>
+											</select>
+										</label>
+									</div>
+								</div>
+								<div class="rate-comm-wrapper">
+									<div  class="rate-wrapper">
+										Rate
+										<p class="rate rate-output">1 <span class="currency">USD </span>= 1 <span class="currency">USD </span></p>
+									</div>
+									<div  class="commission-wrapper">
+										Commission - 1% 
+										<p class="commission commission-output">0 <span class="currency">USD </span></p>
+									</div>
+								</div>
+								<div class="complete-exchange-wrapper">
+									<!-- <button type="submit" class="exchange exchange-button" id="submit" disabled="true">Exchange</button> -->
+									<input type="submit" class="exchange exchange-button" id="submit" disabled="true" value="exchange"></input>
+									<div class="input-agreement-container">
+										<input class="input-agreement d-none input-agreement-check" type="checkbox" name="agreement" id="agreement">
+										<label class="agreement-label" for="agreement"></label>
+										I agree with 
+										<a href="#" class="rules-and-statements">Rules and statements</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="illustration-wrapper">
+							<img src="./img/page-illustration.svg" class="main-illustration" alt="illustration">
+							<div class="backdrop"></div>
+						</div>
+					</div>
+				</section>
+				<section class="latest-applications">
+					<div class="container latest-applications-content">
+							<h1 class="latest-applications-header">Latest applications</h1>
+							<div class="applications-cards-wrapper">
+								<article class="application-card active-card" data-id="slide-1">
+									<h2 class="transaction-date">28.07.2020, 12:36</h2>
+									<div class="application-card-content">
+										<div class="transaction-details-wrapper">
+											<p class="transaction-details give-transaction-details">0.056600935</p><span class="transaction-currency give-card-curr">USD</span>
+										</div>
+										<div class="transaction-icon">
+											<img src="./img/trans-icon.svg" alt="two parallel arrows pointing in opposite directions">
+										</div>
+										<div class="transaction-details-wrapper">
+											<p class="transaction-details receive-transaction-details">102 509.36</p><span class="transaction-currency receive-card-curr">RUB</span>
+										</div>
+									</div>
+								</article>
+								<article class="application-card" data-id="slide-2">
+									<h2 class="transaction-date">28.07.2020, 12:36</h2>
+									<div class="application-card-content">
+										<div class="transaction-details-wrapper">
+											<p class="transaction-details give-transaction-details">0.056600935</p><span class="transaction-currency give-card-curr">USD</span>
+										</div>
+										<div class="transaction-icon">
+											<img src="./img/trans-icon.svg" alt="two parallel arrows pointing in opposite directions">
+										</div>
+										<div class="transaction-details-wrapper">
+											<p class="transaction-details receive-transaction-details">102 509.36</p><span class="transaction-currency receive-card-curr">RUB</span>
+										</div>
+									</div>
+								</article>
+								<article class="application-card" data-id="slide-3">
+									<h2 class="transaction-date">28.07.2020, 12:36</h2>
+									<div class="application-card-content">
+										<div class="transaction-details-wrapper">
+											<p class="transaction-details give-transaction-details">0.056600935</p><span class="transaction-currency give-card-curr">USD</span>
+										</div>
+										<div class="transaction-icon">
+											<img src="./img/trans-icon.svg" alt="two parallel arrows pointing in opposite directions">
+										</div>
+										<div class="transaction-details-wrapper">
+											<p class="transaction-details receive-transaction-details">102 509.36</p><span class="transaction-currency receive-card-curr">RUB</span>
+										</div>
+									</div>
+								</article>
+								<article class="application-card" data-id="slide-4">
+									<h2 class="transaction-date">28.07.2020, 12:36</h2>
+									<div class="application-card-content">
+										<div class="transaction-details-wrapper">
+											<p class="transaction-details give-transaction-details">0.056600935</p><span class="transaction-currency give-card-curr">USD</span>
+										</div>
+										<div class="transaction-icon">
+											<img src="./img/trans-icon.svg" alt="two parallel arrows pointing in opposite directions">
+										</div>
+										<div class="transaction-details-wrapper">
+											<p class="transaction-details receive-transaction-details">102 509.36</p><span class="transaction-currency receive-card-curr">RUB</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="mobile">
+								<div class="slider-btns-wrapper">
+									<label class="slide-label" for="slide-1">
+										<input class="slider-radio" type="radio" name="slide" value="slide1" id="slide-1" checked>
+										<span class="slide"></span>
+									</label>
+									<label class="slide-label" for="slide-2">
+										<input class="slider-radio d-none" type="radio" name="slide" value="slide1" id="slide-2">
+										<span class="slide"></span>
+									</label>
+									<label class="slide-label" for="slide-3">
+										<input class="slider-radio d-none" type="radio" name="slide" value="slide1" id="slide-3">
+										<span class="slide"></span>
+									</label>
+									<label class="slide-label" for="slide-4">
+										<input class="slider-radio d-none" type="radio" name="slide" value="slide1" id="slide-4">
+										<span class="slide"></span>
+									</label>
+								</div>
+							</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="desktop">
+					<div class="container footer-content">
+						<div class="copyright-wrapper footer-box">
+							<div class="footer-logo-container">
+								<a href="#" class="footer-site-logo"><img src="./img/site-logo.svg" alt="logo"></a>
+								<div class="footer-logo-text">
+									CryptoSale
+								</div> 
+							</div>
+							<div class="copyright">
+								<div class="copcopyright-icon">
+									<img src="./img/copyright.svg" alt="copcopyright icon">
+								</div>
+								2021, cryptosale.net
+								<br>
+								All rights reserved
+							</div>
+						</div>
+						<div class="popular-directions-container footer-box">
+							<div class="popular-directions-header">
+								Popular directions of exchange
+							</div>
+							<ul class="popular-directions-list">
+								<li>Exchange Bitcoin to Qiwi</li>
+								<li>Exchange Sber to Bitcoin</li>
+								<li> Ether to Sber</li>
+								<li>Exchange Ether to Tinkoff</li>
+							</ul> 
+						</div>
+						<div class="footer-nav footer-box">
+							<a href="#" class="footer-nav-link nav-link">Tariffs</a>
+							<a href="#" class="footer-nav-link nav-link">Reviews</a>
+							<a href="#" class="footer-nav-link nav-link">Rules</a>
+							<a href="#" class="footer-nav-link nav-link">FAQ</a>
+						</div>
+						<div class="footer-nav footer-box">
+							<a href="#" class="footer-nav-link nav-link">For partners</a>
+							<a href="#" class="footer-nav-link nav-link">Policy</a>
+							<a href="#" class="footer-nav-link nav-link">Contacts</a>
+						</div>
+						<div class="footer-user-options">
+							<button class="sign-up-btn registration-option">Sign Up</button>
+							<button class="log-in-btn-footer registration-option">Log in</button>
+						</div>
+
+
+					</div>
+						
+				
+				</div>
+					<div class="mobile">
+						<div class="container footer-content">
+							<div class="copyright-wrapper footer-box">
+								<div class="footer-logo-container">
+									<a href="#" class="footer-site-logo"><img src="./img/site-logo.svg" alt="logo"></a>
+									<div class="footer-logo-text">
+										CryptoSale
+									</div> 
+								</div>
+								<div class="copyright">
+									<div class="copcopyright-icon">
+										<img src="./img/copyright.svg" alt="copcopyright icon">
+									</div>
+									2021, cryptosale.net
+									<br>
+									All rights reserved
+								</div>
+							</div>
+							<div class="footer-user-options">
+								<button class="sign-up-btn registration-option">Sign Up</button>
+								<button class="log-in-btn-footer registration-option">Log in</button>
+							</div>
+							<div class="popular-directions-container footer-box">
+								<div class="popular-directions-header">
+									Popular directions of exchange
+								</div>
+								<ul class="popular-directions-list">
+									<li>Exchange Bitcoin to Qiwi</li>
+									<li>Exchange Sber to Bitcoin</li>
+									<li> Ether to Sber</li>
+									<li>Exchange Ether to Tinkoff</li>
+								</ul> 
+							</div>
+							<div class="footer-nav footer-box">
+								<a href="#" class="footer-nav-link">Tariffs</a>
+								<a href="#" class="footer-nav-link">Reviews</a>
+								<a href="#" class="footer-nav-link">Rules</a>
+								<a href="#" class="footer-nav-link">FAQ</a>
+							</div>
+							<div class="footer-nav footer-box">
+								<a href="#" class="footer-nav-link">For partners</a>
+								<a href="#" class="footer-nav-link">Policy</a>
+								<a href="#" class="footer-nav-link">Contacts</a>
+							</div>
+	
+
+						</div>
+					
+					</div>
+					
+			</footer>
+			<script src="./js/modal.js"></script>
+			<script src="./js/dropdown.js"></script>
+			<script src="./js/slider.js"></script>
+			<script src="./js/exchange-form.js"></script>
+			<!-- <script src="./js/api.js"></script> -->
+    </body>
+</html>
