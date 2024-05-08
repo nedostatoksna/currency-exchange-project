@@ -1,4 +1,4 @@
-# Currency Exchange Website
+# Currency Exchange App
 
 This project is a currency exchange website built using JavaScript, HTML, and CSS with responsive design. The website allows users to exchange currencies and displays information about the latest currency exchange operations in the "Latest Applications" section, the data is stored in Local Storage.
 
